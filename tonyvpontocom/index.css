@@ -172,54 +172,61 @@ body::after {
     }
 }
 
+/* Premium speaker card */
 .speaker-card {
-    background-color: #111;
-    border: 1px solid #333;
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #101010, #1a1a1a);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.speaker-photo {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.speaker-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
-    align-items: flex-start;
 }
 
-.speaker-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
-
-.speaker-card img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
-
-@media (min-width: 700px) {
-    .speaker-card {
-        flex-direction: row;
-    }
-    .speaker-card:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-}
-
-.speaker-card .talker-header {
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
+.speaker-title {
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: -0.5px;
-    text-transform: uppercase;
-    margin: 0 0 0.5rem 0;
-    color: var(--text-accent);
-    font-family: var(--font-secondary);
+    margin: 0;
+    color: #fff;
 }
 
-.speaker-card p {
+.speaker-subtitle {
+    font-size: 1.2rem;
+    color: #7dc0ff;
+    margin: 0;
+}
+
+.speaker-description {
     font-size: 1rem;
-    line-height: 1.5;
-    color: var(--text-primary);
+    color: #ccc;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .speaker-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /* Footer */
