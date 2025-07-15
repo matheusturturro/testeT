@@ -284,3 +284,51 @@ body::after {
     font-size: 0.8rem;
     background: transparent;
 }
+
+/* Carousel for Tecnologias em Alta */
+.carousel-container {
+    overflow: hidden;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-track img {
+    width: calc(33.333% - 20px);
+    flex-shrink: 0;
+    border-radius: 12px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25D366;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.whatsapp-button img {
+    width: 24px;
+    height: 24px;
+}
