@@ -85,6 +85,57 @@ body::after {
     font-weight: 400;
 }
 
+/* Destaque para o primeiro artigo do blog */
+.post.featured {
+    background: linear-gradient(135deg, #1a1a1a 60%, #2d0000 100%);
+    border: 2px solid var(--text-accent);
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 32px 0 rgba(255,0,0,0.15), 0 1.5px 8px 0 rgba(0,0,0,0.25);
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post.featured:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 16px 48px 0 rgba(255,0,0,0.25), 0 3px 16px 0 rgba(0,0,0,0.35);
+}
+
+.post.featured .post-title {
+    color: var(--text-accent);
+    font-size: 2.4rem;
+    font-family: var(--font-secondary);
+    letter-spacing: 1px;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 2px 8px rgba(255,0,0,0.15);
+}
+
+.post.featured .post-content {
+    font-size: 1.18rem;
+    line-height: 1.7;
+    color: #fff;
+    font-family: var(--font-primary);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.post.featured .post-content h3 {
+    margin-top: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+    color: var(--text-accent);
+    font-family: var(--font-secondary);
+    font-weight: 700;
+}
+
+.post.featured .post-content p {
+    margin-bottom: 1.2rem;
+    font-size: 1.08rem;
+    color: #f3f3f3;
+}
+
 /* Footer */
 .site-footer {
     text-align: left;
