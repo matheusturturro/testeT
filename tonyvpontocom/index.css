@@ -136,6 +136,39 @@ body::after {
     color: #f3f3f3;
 }
 
+/* Speakers grid */
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.speaker-card {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.speaker-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.speaker-card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: var(--text-accent);
+}
+
+.speaker-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-primary);
+}
+
 /* Footer */
 .site-footer {
     text-align: left;
