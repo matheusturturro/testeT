@@ -54,12 +54,35 @@ body::after {
     margin: 0;
 }
 
+.hero-title2 {
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.talker-header {
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
 .hero-subtitle {
     font-family: var(--font-secondary);
     font-size: clamp(1rem, 2vw, 1.5rem);
     font-style: italic;
     color: var(--text-accent);
     margin: 0.5rem 0;
+}
+
+.hero-section {	
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    padding-top: 6rem;
 }
 
 .hero-meta {
@@ -139,8 +162,14 @@ body::after {
 /* Speakers grid */
 .speakers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
+}
+
+@media (min-width: 700px) {
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .speaker-card {
@@ -157,10 +186,14 @@ body::after {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-.speaker-card h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
+.speaker-card .talker-header {
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin: 0;
     color: var(--text-accent);
+    font-family: var(--font-secondary);
 }
 
 .speaker-card p {
