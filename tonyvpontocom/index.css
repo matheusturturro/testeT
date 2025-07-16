@@ -104,6 +104,17 @@ body::after {
     margin-bottom: 0.5rem;
 }
 
+.post-title.tecnologias-em-alta {
+    margin-top: 9rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.post-title.tecnologias-em-alta + .post-content {
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
 .post-content {
     font-weight: 400;
 }
@@ -279,7 +290,7 @@ body::after {
 
 /* Footer */
 .site-footer {
-    text-align: left;
+    text-align: center;
     padding: 2rem 1rem;
     font-size: 0.8rem;
     background: transparent;
