@@ -208,6 +208,18 @@ body::after {
     }
 }
 
+/* Newspaper style speaker article */
+.speaker-article {
+    max-width: 960px;
+    margin: var(--spacing) auto;
+    padding-bottom: var(--spacing);
+    border-bottom: 1px solid var(--text-accent);
+}
+
+.speaker-article:last-child {
+    border-bottom: none;
+}
+
 /* Premium speaker card */
 .speaker-card {
     display: flex;
