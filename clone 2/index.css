@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f7f7f7;
+    color: #222;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.speaker {
+    margin-bottom: 1.5rem;
+}
+
+.carousel-container {
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 16px;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-track img {
+    height: 200px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
